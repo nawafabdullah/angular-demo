@@ -1,6 +1,6 @@
 <p>support works!</p>
 
-<div>
+<div id="main-div">
     <div id="main-support-box">
         <div id="support-paragraph">
             <h2> Support </h2>
@@ -10,23 +10,21 @@
                 <br> information and support related to a
                 <br> company's products and services.
             </h4>
-            <div id="main-support-pic">
-                <img src="../../assets/images/mainSupport.jpg" style="height: 25%;">
-            </div>
         </div>
+        <img id="main-support-pic" src="../../assets/images/mainSupport.jpg">
     </div>
 
     <div id="support-options">
+
         <div id="allign-options">
-            <div (mouseover)="ViewOrSave()" (mouseout)="changeDocumentation=false">
+            <a (click)="ViewOrSave()" (mouseout)="changeDocumentation=false">
                 <span *ngIf="!changeDocumentation">
                     <h2> Documentation </h2>
                 </span>
-            </div>
-
+            </a>
             <div>
                 <span *ngIf="changeDocumentation" (mouseout)="changeDocumentation=false">
-                    <div class="container">
+                    <div class="pdf-container">
                         <textarea [(ngModel)]="pdfSource"></textarea>
 
                         <pdf-viewer [src]="pdfSource" [original-size]="false"></pdf-viewer>
@@ -34,46 +32,46 @@
                 </span>
             </div>
         </div>
-
         <div>
-
-            <a (click)="changeForm=true">
-                <span *ngIf="!changeForm">
-                    <h2> Request Form </h2>
-                </span>
-                <span *ngIf="changeForm">
-                    <form #supportForm="ngForm" (ngSubmit)="getValues(supportForm.value)">
-                        <input type="text" name="companyName" placeholder="company's name">
-                        <br><br>
-                        <input type="text" ngModel name="appName" placeholder="app's name">
-                        <br><br>
-                        <input type="text" ngModel name="adminName" placeholder="your name">
-                        <br><br>
-                        <input type="date" ngModel name="requestDate" placeholder="date">
-                        <br><br>
-                        <input type="text" ngModel name="moreInfo" placeholder="enter your company's name">
-                        <br><br>
-                        <button> Submit </button>
-                    </form>
-                </span>
-            </a>
+            <div id="allign-options">
+                <a (click)="changeForm=true">
+                    <span *ngIf="!changeForm">
+                        <h2> Request Form </h2>
+                    </span>
+                    <span *ngIf="changeForm">
+                        <form #supportForm="ngForm" (ngSubmit)="getValues(supportForm.value)">
+                            <input type="text" name="companyName" placeholder="company's name">
+                            <br><br>
+                            <input type="text" ngModel name="appName" placeholder="app's name">
+                            <br><br>
+                            <input type="text" ngModel name="adminName" placeholder="your name">
+                            <br><br>
+                            <input type="date" ngModel name="requestDate" placeholder="date">
+                            <br><br>
+                            <input type="text" ngModel name="moreInfo" placeholder="enter your company's name">
+                            <br><br>
+                            <button> Submit </button>
+                        </form>
+                    </span>
+                </a>
+            </div>
         </div>
-
         <div>
-            <div (mouseover)="changeContacts=true" (mouseout)="changeContacts=false">
+            <a (click)="changeContacts=true" (mouseout)="changeContacts=false">
                 <span *ngIf="!changeContacts">
                     <h2> Contacts </h2>
                 </span>
-            </div>
-
-            <div>
-                <span *ngIf="changeContacts" (mouseout)="changeContacts=false">
-                    <div class="container">
-                        <h2> phone: 011 45xxxxxx</h2>
-                        <h2> email: taqnia@taqnia.com</h2>
-                        <h2> address: 123 Bussiness Gate </h2>
-                    </div>
-                </span>
+            </a>
+            <div id="allign-options">
+                <div>
+                    <span *ngIf="changeContacts" (mouseout)="changeContacts=false">
+                        <div class="container">
+                            <h2> phone: 011 45xxxxxx</h2>
+                            <h2> email: taqnia@taqnia.com</h2>
+                            <h2> address: 123 Bussiness Gate </h2>
+                        </div>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
