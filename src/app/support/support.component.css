@@ -13,7 +13,30 @@ textarea {
   width: 100%;
 }
 
-.support-paragraph {
-
+#support-paragraph {
 margin-left: 10%;
+
+}
+
+#main-support-box {
+  width: 100%;
+  /* height: 70%; */
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 0;
+}
+
+#main-support-pic {
+  width: 25%;
+  height: 25%;
+  float: right;
+}
+
+#support-options {
+
+  boarder: 2px solid gray;
+}
+
+#allign-options {
+  float: inline-start;
 }
