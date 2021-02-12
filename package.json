@@ -23,8 +23,8 @@
     "mongoclient": "^1.0.3",
     "mongodb": "^3.6.4",
     "ng2-pdf-viewer": "^6.3.2",
-    "pdfjs-dist": "2.5.207",
     "ngx-extended-pdf-viewer": "^8.0.0-beta.9",
+    "pdfjs-dist": "2.5.207",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

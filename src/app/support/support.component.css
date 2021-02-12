@@ -14,8 +14,7 @@ textarea {
 }
 
 #support-paragraph {
-margin-left: 10%;
-
+  margin-left: 10%;
 }
 
 #main-support-box {
@@ -33,10 +32,8 @@ margin-left: 10%;
 }
 
 #support-options {
-
   boarder: 2px solid gray;
 }
 
 #allign-options {
-  float: inline-start;
 }
