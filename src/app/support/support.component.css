@@ -39,8 +39,10 @@ textarea {
 
 #support-options {
   border: 2px solid gray;
+  width: inherit;
 }
 
-#allign-options {
-  display: inline-block;
+#support-options > div > a {
+  float: left;
+  margin-left: 10%;
 }
