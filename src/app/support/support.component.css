@@ -4,7 +4,7 @@ pdf-viewer {
   justify-content: center;
   filter: drop-shadow(5px 5px 5px #222222);
 }
-
+ 
 textarea {
   margin-top: 15px;
   display: block;
@@ -40,9 +40,33 @@ textarea {
 #support-options {
   border: 2px solid gray;
   width: inherit;
+  float: left;
+}
+
+#support-options > div {
+  float: left;
+  clear: left;
+  flex-direction: row;
 }
 
 #support-options > div > a {
   float: left;
-  margin-left: 10%;
+  margin-left: 5%;
+}
+
+
+/*
+#support-options > div > img{
+  float: left;
+  margin-left: 5%;
+}
+*/
+
+.support-options-pic {
+  width: 4%;
+  height: 4%;
+  border-radius: 30%;
+  background-color: white;
+  border: 2px solid black;
+
 }

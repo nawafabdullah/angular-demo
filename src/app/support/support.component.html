@@ -1,4 +1,4 @@
-<p>support works!</p>
+<p> support works!</p> 
 
 <div id="main-div">
     <div id="main-support-box">
@@ -15,9 +15,10 @@
     </div>
 
     <div id="support-options">
-        <div id="allign-options">
+        <div class="allign-options">
             <a (click)="ViewOrSave()" (mouseout)="changeDocumentation=false">
                 <span *ngIf="!changeDocumentation">
+                    <img class="support-options-pic" src="../../assets/images/Documantaion.jpg">
                     <h2> Documentation </h2>
                 </span>
             </a>
@@ -34,6 +35,7 @@
         <div>
             <a (click)="changeForm=true">
                 <span *ngIf="!changeForm">
+                    <img class="support-options-pic" src="../../assets/images/Documantaion.jpg">
                     <h2> Request Form </h2>
                 </span>
                 <span *ngIf="changeForm">
@@ -53,13 +55,13 @@
                 </span>
             </a>
         </div>
-        <div>
+        <div >
             <a (click)="changeContacts=true" (mouseout)="changeContacts=false">
                 <span *ngIf="!changeContacts">
+                    <img class="support-options-pic" src="../../assets/images/Documantaion.jpg">
                     <h2> Contacts </h2>
                 </span>
             </a>
-
             <div>
                 <span *ngIf="changeContacts" (mouseout)="changeContacts=false">
                     <div class="container">
@@ -69,7 +71,21 @@
                     </div>
                 </span>
             </div>
+        </div>
+        <div >
+            <a (click)="changeContacts=true" (mouseout)="changeContacts=false">
+                <span *ngIf="!changeContacts">
+                    <img class="support-options-pic" src="../../assets/images/Documantaion.jpg">
+                    <h2> Tickets </h2>
+                </span>
+            </a>
+            <div>
+                <span *ngIf="changeContacts" (mouseout)="changeContacts=false">
+                    <div class="container">
 
+                    </div>
+                </span>
+            </div>
         </div>
     </div>
 </div>
